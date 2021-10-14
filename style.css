@@ -1,3 +1,6 @@
-.btn{
-    color: blueviolet;
+main{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 0;
+    font-size: 100px;
 }
