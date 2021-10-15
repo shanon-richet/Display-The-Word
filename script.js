@@ -10,11 +10,8 @@ function createWord(){
         main.appendChild(letters)
         interval = setInterval(createWord, 4000)
     },1000)
-    if (letters === word.slice(0,5)){
+    if (letters === word){
         clearInterval(letters)
-    }
-    if (letters.length === 5){
-        clearInterval()
     }
 }
 }
