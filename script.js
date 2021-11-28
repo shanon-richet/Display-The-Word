@@ -8,17 +8,17 @@ function createWord(){
         const letters= document.createElement('p');
         letters.innerHTML= word[i++]
         main.appendChild(letters)
-        interval = setInterval(createWord, 4000)
+        setTimeout(() => {
+            clearInterval(interval)
+        }, 5000);
     },1000)
     if (letters === word){
         clearInterval(letters)
     }
 }
+
 }
 setTimeout(createWord, 10);
-
-
-
 
 
 
